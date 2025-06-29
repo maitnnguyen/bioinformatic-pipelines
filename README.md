@@ -72,4 +72,11 @@ To run the pipelines, you need:
 ```
 curl -s https://get.nextflow.io | bash
 mv nextflow ~/bin/   # or anywhere in your PATH 
+
+# verify nextflow installation
+nextflow --version
 ```
+To run any pipeline/workflow
+```
+nextflow run [pipelines] # for ex., workflows/preprocessing_ngs/main.nf
+``
