@@ -79,4 +79,4 @@ nextflow --version
 To run any pipeline/workflow
 ```
 nextflow run [pipelines] # for ex., workflows/preprocessing_ngs/main.nf
-``
+```
