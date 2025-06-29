@@ -4,7 +4,7 @@ This repository contains different bioinformatics pipelines for processing high-
 
 Each subdirectory in workflows/ contains an independent pipeline. These pipelines include modular components for different genomics analysis tasks.
 
-🧬 1 Preprocessing NGS Pipeline (preprocessing_ngs/main.nf)
+## *1 Preprocessing NGS Pipeline (preprocessing_ngs/main.nf)*
 
 Handles single-end, paired-end, or long-read sequencing
 
@@ -18,7 +18,7 @@ Contamination estimation using GATK
 
 Uses conda environment: envs/preprocessing.yml
 
-📊 2 CNV Calling (cnv_calling_ichorcna/main.nf)
+## *2 CNV Calling (cnv_calling_ichorcna/main.nf)*
 
 Takes BAM files as input
 
@@ -28,7 +28,7 @@ CNV analysis using ichorCNA
 
 Uses conda environment: envs/ichorcna.yml
 
-🔍 3 Mutation Calling (mutation_calling/main.nf)
+## *3 Mutation Calling (mutation_calling/main.nf)*
 
 Requires tumor-normal BAM pairs
 
@@ -40,7 +40,7 @@ Somatic variant detection with Strelka2
 
 Uses conda environment: envs/mutation.yml
 
-🔬 4 Single-Cell RNA-seq Analysis (singlecell/scrna_main.nf)
+## *4 Single-Cell RNA-seq Analysis (singlecell/scrna_main.nf)*
 
 Accepts FASTQ or filtered count matrices
 
@@ -52,7 +52,7 @@ Clustering and annotation
 
 Uses conda environment: envs/scrna.yml
 
-🧬 5 Multiome Analysis (RNA + ATAC) (singlecell/multiome_main.nf)
+## *5 Multiome Analysis (RNA + ATAC) (singlecell/multiome_main.nf)*
 
 Processes multiome datasets
 
