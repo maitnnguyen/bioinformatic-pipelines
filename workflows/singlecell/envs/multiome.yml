@@ -1,0 +1,19 @@
+name: multiome
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+  - r
+  - r::r
+  - r::bioconductor
+  - r::bioconductor-archr
+  - r::bioconductor-summarizedexperiment
+  - r::bioconductor-singlecellexperiment
+  - r::bioconductor-matrixgenerics
+  - r::bioconductor-complexheatmap
+  - r::bioconductor-iranges
+  - r::bioconductor-s4vectors
+  - r::bioconductor-genomicranges
+  - r::ggplot2
+  - r::dplyr
+  - r-base

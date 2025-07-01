@@ -1,13 +1,12 @@
-name: scrna
+name: mudata
 channels:
   - conda-forge
   - bioconda
   - defaults
 dependencies:
   - python=3.9
+  - mudata
   - scanpy
-  - anndata
   - pandas
+  - numpy
   - matplotlib
-  - seaborn
-  - decoupler
