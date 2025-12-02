@@ -1,10 +1,13 @@
 # General information
 
-This repository contains different bioinformatics pipelines for processing high-throughput data. Below is the general information of the pipelines.
+This repository contains different bioinformatics pipelines for processing high-throughput data and analysis notebooks example for each type of the bio data. Below is the general information of the pipelines.
 
-Each subdirectory in workflows/ contains an independent pipeline. These pipelines include modular components for different genomics analysis tasks.
+Each subdirectory in `workflows/` contains an independent pipeline. These pipelines include modular components for different genomics analysis tasks.
 
-## **1. Preprocessing NGS Pipeline (preprocessing_ngs/main.nf)**
+Directory `analysis` contains different notebooks for the analysis of certain omics data.
+
+## **Processing pipelines**
+### **1. Preprocessing NGS Pipeline (preprocessing_ngs/main.nf)**
 
 Handles single-end, paired-end, or long-read sequencing
 
@@ -18,7 +21,7 @@ Contamination estimation using GATK
 
 Uses conda environment: envs/preprocessing.yml
 
-## **2. CNV Calling (cnv_calling_ichorcna/main.nf)**
+### **2. CNV Calling (cnv_calling_ichorcna/main.nf)**
 
 Takes BAM files as input
 
@@ -28,7 +31,7 @@ CNV analysis using ichorCNA
 
 Uses conda environment: envs/ichorcna.yml
 
-## **3. Mutation Calling (mutation_calling/main.nf)**
+### **3. Mutation Calling (mutation_calling/main.nf)**
 
 Requires tumor-normal BAM pairs
 
@@ -40,7 +43,7 @@ Somatic variant detection with Strelka2
 
 Uses conda environment: envs/mutation.yml
 
-## **4. Single-Cell RNA-seq Analysis (singlecell/scrna_main.nf)**
+### **4. Single-Cell RNA-seq Analysis (singlecell/scrna_main.nf)**
 
 Accepts FASTQ or filtered count matrices
 
@@ -62,11 +65,14 @@ Integrated RNA + ATAC analysis using ArchR, Signac, or Cell Ranger ARC
 
 Uses conda environment: envs/multiome.yml
 
+## Analysis notebooks
+
 ## **Requirements**
-To run the pipelines, you need:
+To run the pipelines or the example of the analysis, you need:
 - Nextflow
 - Docker or Singularity (for containers)
 - Conda (for package environments)
+- R or python
 
 ### Install nextflow:
 ```
